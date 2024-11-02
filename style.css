@@ -1,0 +1,181 @@
+body,html{margin: 0%;padding:0%}
+header{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;}
+
+
+.perfil{background-image:url("./img/Perfil.png");
+    position: absolute;
+    top: 38px;
+    right: 120px;
+    background-repeat:no-repeat;
+    height:30px;
+    width: 30px;
+    background-size: 30px 30px;
+    background-position:center;
+    border-style: none;}
+.Carrito{background-image:url("./img/tienda.png");
+    position: absolute;
+    top: 38px;
+    right: 35px;
+    background-repeat:no-repeat;
+    height:30px;
+    width: 30px;
+    background-size: 30px 30px;
+    background-position:center;
+    border-style: none;}
+.Buscar{background-image:url("./img/Buscar.png");
+    position: absolute;
+    top: 38px;
+    right: 80px;
+    background-repeat:no-repeat;
+    height:30px;
+    width: 30px;
+    background-size: 30px 30px;
+    background-position:center;
+    border-style: none;}
+
+
+.imagen{width: 220px;}
+.botones{width: 220px;}
+.navbar select{color: #0AA199;
+    font-style: oblique;
+    border-style: none;
+    margin: 18px;}
+.navbar a{text-decoration: none;
+    color: #0AA199;
+    font-style: oblique;
+    font-size: 15px;}
+
+main{display: flex;}
+.parrafo{background-image: url("./img/cielo.jpg");
+    margin: 0%;
+    padding: 0%;
+    background-repeat: no-repeat;
+    height: 85vh;
+    width: 30%;
+    background-size: cover;
+    filter: brightness(0.8) blur(0.2px);}
+.imagen1{background-image: url("./img/definitiva.jpg");
+    margin: 0%;
+    padding: 0%;
+    background-repeat: no-repeat;
+    height: 85vh;
+    width:70%;
+    background-size: cover;
+    background-position:center;
+    filter: brightness(0.8) blur(0.2px);}
+article{position: relative;}
+.parrafo p{position: relative;
+    font-style:inherit;
+    font-family: Arial, sans-serif;}
+.SPF{font-size: 30px;
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    color: white;}
+.mas{font-size: 70px;
+    position: absolute;
+    bottom: 55px;
+    left: 200px;
+    color: white;}
+.cincuenta{font-size:180px;
+    position: absolute;
+    bottom: 300px;
+    left: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;}
+.nuevo{font-size:20px;
+    position: absolute;
+    bottom: 515px;
+    left: 60px;
+    color:yellow;}
+.pa{font-size: 25px;
+    position: absolute;
+    bottom: 567px;
+    left: 140px;
+    color: white;}
+.protector{font-size: 28px;
+    position: absolute;
+    bottom: 590px;
+    left: 60px;
+    color: white;}
+.solar{font-size: 28px;
+    position: absolute;
+    bottom: 625px;
+    left: 60px;
+    color: white;}
+.sun{font-size: 28px;
+    position: absolute;
+    bottom: 655px;
+    left: 60px;
+    color: #248DCE;
+    background-color: white;
+    width: 170px;
+    border-radius: 4px;}
+.do{font-size:10px;
+    position: absolute;
+    bottom: 680px;
+    left: 60px;
+    color: white;}
+.capa p {font-size:20px;
+    font-style:inherit;
+    color: white;
+    font-family: Arial, sans-serif;
+
+}
+.capa{
+    position: absolute;
+    top: 400px;
+    left: 60px; }
+.regalo{background-image: url("./img/regalo.png");
+    position: fixed;
+    top: 525px;
+    left: 30px;
+    background-repeat:no-repeat;
+    height:50px;
+    width: 200px;
+    background-size: 200px 35px;
+    border-radius:40%;
+    background-position:center;
+    border-style: none;
+    z-index: 15;
+}
+.menssage{background-image: url("./img/mensaje.jpg");
+    position: fixed;
+    top: 525px;
+    right: 30px;
+    background-repeat:no-repeat;
+    height:50px;
+    width: 50px;
+    background-size: 50px 50px;
+    border-radius:40%;
+    background-position:center;
+    border-style: none;
+    z-index: 15;
+}
+
+@media (max-width: 480px) 
+{ .navbar { flex-direction: column; } 
+.navbar select, .navbar a { display: none;z-index: 15;}
+ .navbar::before { content: "Menú";
+     color: #0AA199;
+      font-size: 20px; 
+      cursor: pointer; } 
+      .navbar:hover select, 
+      .navbar:hover a { display: block; } }
+      @media (min-width: 481px) and (max-width: 768px) 
+      { .navbar { flex-direction: column; 
+        position: fixed;
+        z-index: 15;
+        width: 200px; 
+        position: fixed; 
+        top: 0;
+         left: 0; 
+        height: 100vh; 
+        background-color: #0AA199; } 
+        .botones { display: none; }
+         .main { margin-left: 220px; } }
+         
